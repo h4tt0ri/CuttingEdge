@@ -1,12 +1,12 @@
 # CuttingEdge
-A forensic tool for parse Microsoft Edge `History` files. Also, it support `favicons` and `Shortcut` files.
+A forensic tool for parse Microsoft Edge `History` files. Also, it supports `favicons` and `Shortcut` artifacts.
 
 ## Requirements & Installation
 - Python3.x
 
 
 ## Usage
-History file are stored in SQLite3 database format. Usually you can find these artifacts in `%USERPROFILE%\appdata\local\microsoft\edge\user_data\default`. Currently, it support the following artifact:
+History files are stored in SQLite3 database format. Usually you can find these artifacts in `%USERPROFILE%\appdata\local\microsoft\edge\user_data\default`. Currently, it supports the following artifact:
 
 - History
 - Favicons
@@ -15,7 +15,7 @@ History file are stored in SQLite3 database format. Usually you can find these a
 Note that, downloaded files are inside `history` artifact.
 
 ```bash
-usage: cutting_edge.py [-h] -f INPUT -t TYPE -o OUTPUT
+usage: cutting_edge.py [-h] -f INPUT -t TYPE [-o OUTPUT]
 
 Microsoft Edge Parser
 
@@ -39,3 +39,12 @@ The output file will be in .CSV format and you don't need to add the ".csv" in t
 
 ## License
 MIT
+
+## Find Me
+
+- Website: https://www.h4tt0r1.cz/
+- Twitter: https://mobile.twitter.com/hackttori
+- Discord: https://www.discord.com/users/185572012394020864
+- LinkedIn: http://linkedin.com/in/nvalenzuelam
+
+Any feedback about the tool is welcome :)

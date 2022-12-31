@@ -96,7 +96,8 @@ def main():
     parser = argparse.ArgumentParser(prog="cutting_edge.py",description= colors.white + "Microsoft" + colors.blue + " Edge" + colors.blue + " Parser" + colors.default)
     parser.add_argument('-f',   dest="INPUT",    help='history edge file', required= True)
     parser.add_argument('-t',   dest="TYPE",    help='ex: history, downloads, favicons, shortcuts', required= True)
-    parser.add_argument('-o', dest="OUTPUT", help='file output in csv format', required= True)
+    parser.add_argument('-o', dest="OUTPUT", help='file output in csv format', default=str(round(time.time())))
+    #parser.add_argument('-all', help='parse all TYPE artifacts')
     args        =   parser.parse_args()
     dbfile      =   args.INPUT
     parse_type  =   args.TYPE
@@ -104,7 +105,6 @@ def main():
 
     input_db_file = os.path.expanduser(dbfile)
     print("["+colors.blue+"+"+colors.default+"] parsing edge "+ parse_type)
-
 
     if parse_type.lower() == 'history':
         parse_edge_history(input_db_file, output_file)
