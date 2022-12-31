@@ -1,5 +1,5 @@
 # CuttingEdge
-A little forensic tool for parse Microsoft Edge `History` files. Also, it support `favicons` and `Shortcut` files.
+A forensic tool for parse Microsoft Edge `History` files. Also, it support `favicons` and `Shortcut` files.
 
 ## Requirements & Installation
 - Python3.x
@@ -29,10 +29,10 @@ optional arguments:
 Example usage:
 
 ```bash
-1:18 h4tt0r1忍者: ~/git/CuttingEdge$ python3 CuttingEdge.py -f /path/to/Shortcuts -t shortcuts -o shortcut_parsed
-1:18 h4tt0r1忍者: ~/git/CuttingEdge$ python3 CuttingEdge.py -f /path/to/History -t history -o history_parsed
-1:18 h4tt0r1忍者: ~/git/CuttingEdge$ python3 CuttingEdge.py -f /path/to/History -t downloads -o downloads_parsed
-1:18 h4tt0r1忍者: ~/git/CuttingEdge$ python3 CuttingEdge.py -f /path/to/Favicons -t favicons -o favicons_parsed
+$ python3 CuttingEdge.py -f /path/to/Shortcuts -t shortcuts -o shortcut_parsed
+$ python3 CuttingEdge.py -f /path/to/History -t history -o history_parsed
+$ python3 CuttingEdge.py -f /path/to/History -t downloads -o downloads_parsed
+$ python3 CuttingEdge.py -f /path/to/Favicons -t favicons -o favicons_parsed
 ```
 
 The output file will be in .CSV format and you don't need to add the ".csv" in the output argument.
