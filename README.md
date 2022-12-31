@@ -13,7 +13,7 @@ python3 CuttingEdge.py -h
 ```
 
 
-## Usage
+## Usage 💻
 History files are stored in SQLite3 database format. Usually you can find these artifacts in `%USERPROFILE%\appdata\local\microsoft\edge\user_data\default`. Currently, it supports the following artifact:
 
 - History
@@ -48,7 +48,7 @@ The output file will be in .CSV format and you don't need to add the ".csv" in t
 ## License
 MIT
 
-## Find Me
+## Find Me 🦊
 
 - Website: https://www.h4tt0r1.cz/
 - Twitter: https://mobile.twitter.com/hackttori
