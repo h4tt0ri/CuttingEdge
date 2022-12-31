@@ -5,6 +5,13 @@ A forensic tool for parse Microsoft Edge `History` files. Also, it supports `fav
 - Python3.x
 - pandas==1.4.3
 
+```
+git clone https://github.com/h4tt0ri/CuttingEdge
+cd CuttingEdge/
+pip3 install -r requirements.txt
+python3 CuttingEdge.py -h
+```
+
 
 ## Usage
 History files are stored in SQLite3 database format. Usually you can find these artifacts in `%USERPROFILE%\appdata\local\microsoft\edge\user_data\default`. Currently, it supports the following artifact:
@@ -16,7 +23,7 @@ History files are stored in SQLite3 database format. Usually you can find these 
 Note that, downloaded files are inside `history` artifact.
 
 ```bash
-usage: cutting_edge.py [-h] -f INPUT -t TYPE [-o OUTPUT]
+usage: CuttingEdge.py [-h] -f INPUT -t TYPE [-o OUTPUT]
 
 Microsoft Edge Parser
 
