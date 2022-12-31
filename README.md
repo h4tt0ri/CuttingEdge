@@ -3,6 +3,7 @@ A forensic tool for parse Microsoft Edge `History` files. Also, it supports `fav
 
 ## Requirements & Installation
 - Python3.x
+- pandas==1.4.3
 
 
 ## Usage
